@@ -40,4 +40,6 @@ class BankAccount:
         print("Bank:", self.name)
         print("Name:", self.customer_name)
         print("Current Balance:", self.current_balance)
-        print("Minimum Balance:", self.minimum_balance, "\n")
+        print("Minimum Balance:", self.minimum_balance)
+        print("Routing Number:", self._routing_number)
+        print("Account Number:", self.__account_number, "\n")
