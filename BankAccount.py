@@ -4,6 +4,8 @@ Author: Robert Figueroa, rfiguer3@charlotte.edu
 Date: 2025-09-04
 Description: This class simulates a basic BankAccount.
 """
+
+
 class BankAccount:
     # Class variables
     name = "Happy Bank"
