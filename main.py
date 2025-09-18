@@ -101,3 +101,30 @@ checking1.print_customer_information()
 checking2.print_customer_information()
 savings1.print_customer_information()
 savings2.print_customer_information()
+
+# FAKE SCENARIO
+print("Robert opens a savings account and put's $500 in with a 10% annual interest rate.")
+scenario_savings = SavingsAccount.SavingsAccount(
+    "Robert", 500, 50, .1, 100, 200)
+scenario_savings.print_customer_information()
+
+print("There is a minimum of $50 needed to be kept in the account at all times.")
+print("To test this, Robert tries to take out all $500.")
+scenario_savings.withdraw(500)
+scenario_savings.print_customer_information()
+
+print("After this, Robert adds $100 every month for 10 months.")
+# For the sake of keeping the code somewhat clean, I made this one $1000 deposit
+scenario_savings.deposit(1000)
+scenario_savings.print_customer_information()
+
+print("After another 2 months pass, the interest kicks in")
+scenario_savings.interest_tick()
+scenario_savings.print_customer_information()
+
+print("Robert now withdraws $500 for an emergency expense.")
+scenario_savings.withdraw(500)
+scenario_savings.print_customer_information()
+
+print("Robert values the importance of a savings account.")
+print("He continues to put money in every month for the rest of his life until he retires early.")
