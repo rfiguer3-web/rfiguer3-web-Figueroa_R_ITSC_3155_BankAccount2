@@ -1,4 +1,4 @@
-import BankAccount
+from BankAccount import BankAccount
 
 
 class CheckingAccount(BankAccount):
@@ -14,7 +14,7 @@ class CheckingAccount(BankAccount):
             return
         elif self.transferred + amount > self.limit:
             print("Transfer would exceed limit.  Only $" + str(self.limit - self.transferred)
-                  + "more may be moved until the limit resets.")
+                  + " more may be moved until the limit resets.")
             return
         else:
             self.withdraw(amount)
