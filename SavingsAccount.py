@@ -7,4 +7,4 @@ class SavingsAccount(BankAccount):
         self.interest = interest
 
     def interest_tick(self):
-        self.current_balance *= (1 + self.interest)
+        self.current_balance = round(self.current_balance * (1 + self.interest), 2)
